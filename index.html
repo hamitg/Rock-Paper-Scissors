@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock-Paper-Scissors</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div id="reset" class="btn">Reset</div>
+        </div>
+        <div>
+            <h1>Rock Paper Scissors</h1>
+            <h2>First to 3 Wins</h2>
+        </div>
+        <div class="scoreboard">
+            <div class="score">
+                <div class="player-name">Player:</div>
+                <div id="player-score">0</div>
+
+            </div>
+
+            <div class="score">
+                <div class="player-name">Computer:</div>
+                <div id="computer-score">0</div>
+
+            </div>
+        </div>
+        <div id="game-buttons">
+            <div data-value="rock" class="game-button">
+                <img src="images/rock.jpg">
+            </div>
+
+            <div data-value="paper"class="game-button">
+                <img src="images/paper.jpg">
+            </div>
+
+            <div data-value="scissors"class="game-button">
+                <img src="images/scissors.jpg">
+            </div>
+        </div>
+        <div id="round-result"></div>
+        <div id="final-result"></div>
+        <audio id="audio-click" src="sounds/winning1.wav"></audio>
+        <audio id="audio-gameover-won" src="sounds/winning2.wav"></audio>
+        <audio id="audio-gameover-lost" src="sounds/losing2.wav"></audio>
+        <audio id="music"
+                src="sounds/bgmusic.wav"
+                autoplay>
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+
+    </div>
+    <script src="scripts/main.js"></script>
+
+</body>
+
+</html>

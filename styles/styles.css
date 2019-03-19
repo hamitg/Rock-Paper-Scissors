@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+}
+
+body {
+    font-family:"Orbitron";
+    font-size: 24px;
+    color: #333;
+}
+
+.container {
+    width: 800px;
+    margin: 20px auto 20px auto;
+    text-align: center;
+
+}
+
+.scoreboard {
+    width: 550px;
+    margin: 50px auto 0 auto;
+}
+
+.score {
+    width: 250px;
+    height: 150px;
+    display: inline-block;
+}
+
+#player-score,
+#computer-score {
+    font-size: 80px;
+}
+
+#game-buttons {
+    margin-bottom: 10px;
+}
+
+.game-button {
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.7;
+    color: inherit;
+    background-color: inherit;
+}
+
+.game-button:hover {
+    display: inline-block;
+    opacity: 1;
+}
+
+.player-name {
+    font-size: 28px;
+}
+
+#round {
+    background-color: red;
+    width: 100px;
+    height: 150px;
+    display: inline-block;
+}
+
+#final-results {
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.nav-bar {
+    text-align: right;
+    padding: 10px 30px;
+}
+
+.btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 2px solid #333;
+    border-radius: 14px;
+    text-align: center;
+    background-color: #fff;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#music-toggle {
+    display: none;
+    float: right;
+}
+
+#reset {
+    display: none;
+}
+
+#music-toggle:hover,
+#reset:hover {
+    opacity: 1;
+}
+
+
+
