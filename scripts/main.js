@@ -25,15 +25,22 @@ const btnReset = document.querySelector("#reset");
 
 gameButtons.forEach(function (element) {
     element.addEventListener("click", function () {
+        let nameOfElement = element.getAttribute("data-value");
+        let computerChoice = getComputerChoice();
         if (playerScore < 3 && computerScore <3) {
+            document.getElementById("paper").style.borderColor = "#FFFFFF";
+            document.getElementById("scissors").style.borderColor = "#FFFFFF";
+            document.getElementById("rock").style.borderColor = "#FFFFFF";
             audioClick.play();
-            playRound(element.getAttribute("data-value"));
+            document.getElementById(nameOfElement).style.borderColor = "#5df97f";
+            playRound(nameOfElement, computerChoice);
+            document.getElementById(computerChoice).style.borderColor = "#ef4242";
         }
     });
 });
 
-function playRound (playerChoice) {
-    let computerChoice = getComputerChoice();
+function playRound (playerChoice, computerChoice) {
+    document.getElementById(computerChoice).style.borderColor = "#f34840";
     divRoundResult.textContent = roundResult(playerChoice, computerChoice);
     divComputerScore.textContent = computerScore;
     divPlayerScore.textContent = playerScore;
@@ -48,6 +55,7 @@ function playRound (playerChoice) {
         divFinalResult.textContent = getWinner();
         btnReset.style.display = "inline-block";
     }
+    document.getElementById(computerChoice).style.borderColor = "#FFFFFF";
 
 }
 

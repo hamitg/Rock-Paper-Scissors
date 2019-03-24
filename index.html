@@ -29,15 +29,15 @@
             </div>
         </div>
         <div id="game-buttons">
-            <div data-value="rock" class="game-button">
+            <div id="rock" data-value="rock" class="game-button">
                 <img src="images/rock.jpg">
             </div>
 
-            <div data-value="paper"class="game-button">
+            <div id="paper" data-value="paper"class="game-button">
                 <img src="images/paper.jpg">
             </div>
 
-            <div data-value="scissors"class="game-button">
+            <div id="scissors" data-value="scissors"class="game-button">
                 <img src="images/scissors.jpg">
             </div>
         </div>
@@ -46,13 +46,14 @@
         <audio id="audio-click" src="sounds/winning1.wav"></audio>
         <audio id="audio-gameover-won" src="sounds/winning2.wav"></audio>
         <audio id="audio-gameover-lost" src="sounds/losing2.wav"></audio>
-        <audio id="music"
+        <audio controls loop id="music"
                 src="sounds/bgmusic.wav"
                 autoplay>
             Your browser does not support the <code>audio</code> element.
         </audio>
 
     </div>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
